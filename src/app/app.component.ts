@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'formularz';
+  isSpecial = false;
+  actualClass="casual";
+
+  currentStyle = {
+    'font-size': this.isSpecial ? '24px' : '12px',
+    'font-weight':'bold'
+  };
 }
